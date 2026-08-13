@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LIBAAS EDIT — Men's Fashion</title>
+<style>
+:root{--pink:#ff3f6c;--ink:#282c3f;--muted:#696e7a;--line:#e9e9ed;--bg:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+.top{height:34px;background:#fafafa;border-bottom:1px solid #eee;display:flex;align-items:center;justify-content:flex-end;padding:0 5%;font-size:11px;color:#777}
+.nav{height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 5%;gap:34px;position:sticky;top:0;background:#fff;z-index:20}
+.logo{font-family:Georgia,serif;font-size:25px;letter-spacing:.25em;font-weight:500;margin-right:8px}
+.nav a{font-size:13px;font-weight:700;letter-spacing:.04em}
+.search{margin-left:auto;width:min(430px,34vw);background:#f5f5f6;border-radius:4px;height:40px;display:flex;align-items:center;padding:0 15px;color:#888;font-size:13px}
+.hero{width:90%;max-width:1240px;margin:26px auto 38px;background:#f4f1ed;border-radius:8px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;min-height:390px}
+.hero-copy{padding:55px;display:flex;flex-direction:column;justify-content:center}
+.hero-kicker{font-size:11px;letter-spacing:.22em;color:#777;text-transform:uppercase}
+.hero h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(40px,5vw,66px);line-height:1;margin:14px 0}
+.hero p{color:#666;line-height:1.7;max-width:420px;font-size:14px}
+.hero-img{min-height:390px;background:#e6e0d8;display:flex;align-items:center;justify-content:center;color:#999;font-size:12px;letter-spacing:.12em}
+.breadcrumb{width:90%;max-width:1240px;margin:0 auto 15px;font-size:12px;color:#777}
+.shop{width:90%;max-width:1240px;margin:auto}
+.heading{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:20px}
+.heading h2{margin:0;font-family:Georgia,serif;font-weight:400;font-size:30px}
+.heading span{font-size:12px;color:#777}
+.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.card{border:1px solid var(--line);background:#fff}
+.photo{height:520px;background:#f2f2f2;display:flex;align-items:center;justify-content:center;color:#aaa;font-size:11px;letter-spacing:.12em}
+.photo img{width:100%;height:100%;object-fit:cover}
+.body{padding:17px 16px 19px}
+.row{display:flex;justify-content:space-between;gap:18px}
+.brand{font-size:12px;color:#777;margin-bottom:5px}
+.name{font-size:16px;font-weight:700;margin:0 0 7px}
+.price{font-size:15px;font-weight:700;white-space:nowrap}
+.note{font-size:12px;color:#777;margin:0}
+.buyrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.buy{height:44px;border:1px solid #ddd;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;letter-spacing:.06em;background:#fff}
+.buy.myntra{border-color:#ff3f6c;color:#ff3f6c}
+.mlogo{font-weight:900;letter-spacing:-.04em;margin-right:7px}
+.buy:hover{background:#fafafa}
+.insta{width:90%;max-width:1240px;margin:55px auto 30px;padding:20px 0;border-top:1px solid var(--line);text-align:center;font-size:13px}
+.insta a{font-weight:700}
+@media(max-width:850px){
+ .nav{gap:16px;padding:0 4%}.nav a{display:none}.search{width:42vw}
+ .hero{grid-template-columns:1fr}.hero-img{min-height:250px;order:-1}.hero-copy{padding:35px}
+ .products{grid-template-columns:1fr}.photo{height:440px}
+}
+</style>
+</head>
+<body>
+<div class="top">LIBAAS EDIT</div>
+<nav class="nav">
+  <div class="logo">LIBAAS</div>
+  <a href="#shop">MEN</a>
+  <a href="#shop">NEW IN</a>
+  <a href="#shop">BESTSELLERS</a>
+  <div class="search">Search for products, brands and more</div>
+</nav>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="hero-kicker">Men's Edit</div>
+    <h1>Simple looks.<br>Better style.</h1>
+    <p>Curated men's outfits with clean silhouettes and easy everyday pieces.</p>
+  </div>
+  <div class="hero-img">YOUR CAMPAIGN PHOTO</div>
+</section>
+
+<div class="breadcrumb">Home / Men's Fashion / Shop the Look</div>
+
+<section class="shop" id="shop">
+  <div class="heading">
+    <h2>Shop the Look</h2>
+    <span>2 ITEMS</span>
+  </div>
+
+  <div class="products">
+    <article class="card">
+      <div class="photo">SHIRT PHOTO</div>
+      <div class="body">
+        <div class="row">
+          <div>
+            <div class="brand">LIBAAS EDIT</div>
+            <p class="name">Ribbed Sweater</p>
+            <p class="note">Men · Light Blue · Relaxed Fit</p>
+          </div>
+          <div class="price">₹532</div>
+        </div>
+        <div class="buyrow">
+          <!-- Replace this href with your Myntra shirt affiliate link -->
+          <a class="buy myntra" href="YOUR_SHIRT_MYNTRA_AFFILIATE_LINK" target="_blank" rel="noopener">
+            <span class="mlogo">M</span> BUY SHIRT
+          </a>
+          <a class="buy" href="https://www.instagram.com/libaas__room/" target="_blank" rel="noopener">VIEW @LIBAAS__ROOM</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo">PANT PHOTO</div>
+      <div class="body">
+        <div class="row">
+          <div>
+            <div class="brand">LIBAAS EDIT</div>
+            <p class="name">Relaxed Fit Jeans</p>
+            <p class="note">Men · Blue · Wide Leg</p>
+          </div>
+          <div class="price">₹835</div>
+        </div>
+        <div class="buyrow">
+          <!-- Replace this href with your Myntra pant affiliate link -->
+          <a class="buy myntra" href="YOUR_PANT_MYNTRA_AFFILIATE_LINK" target="_blank" rel="noopener">
+            <span class="mlogo">M</span> BUY PANT
+          </a>
+          <a class="buy" href="https://www.instagram.com/libaas__room/" target="_blank" rel="noopener">VIEW @LIBAAS__ROOM</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="insta">Instagram · <a href="https://www.instagram.com/libaas__room/" target="_blank">@libaas__room</a></div>
+</body>
+</html>
